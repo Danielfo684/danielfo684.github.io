@@ -13,17 +13,19 @@ background-image: url(images/fondo.jpg);
             font-size: x-large;
             border: 2px solid rgb(21, 21, 91);
             text-align: center;
+       
         }
             .seccion {
 border: 1px solid black;
                 background-color: rgb(227, 232, 236);
                 width: 700px;
                 text-align: center;
+                margin: 5px;
                 
             }
             .subtitulo {
                 margin: 5px;
-                border: 1px solid black;
+                  border: 1px solid black;
                 background-color: rgb(183, 207, 199);
                 text-align: center;
 font-size:larger;
@@ -33,6 +35,18 @@ font-size:larger;
                 text-align: center;
                 font-size: xx-large;
             }
+
+            .cuestionario {
+                margin: 5px;
+                background-color: rgb(194, 216, 235);
+                border: 3px solid rgb(4, 4, 68);
+
+            }
+            .seccionCuest {
+                margin: 5px;
+                background-color: rgb(216, 235, 235);
+                border: 1px solid black;
+            }
     </style>
 </head>
 <body>
@@ -41,71 +55,121 @@ font-size:larger;
             src="images/cabecera1.jpg"
             alt="Equipo de jugger"
             height="200px"
-            width="1000px"
+            width="800px"
         >
         <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
     </div>
     <nav class="navegador">
-        <div>
-            <a href="">| Galería |</a>
-            <a href="">| Tienda |</a>
-            <a href="#contacto">| Contacto |</a>
-            <a href="#torneos">| Próximos torneos |</a>
-        </div>
+        <a href="" style="color: blue;">| Galería |</a>
+        <a href="" style="color: blue;">| Tienda |</a>
+        <a href="#C1" style="color: blue;">| Contacto |</a>
+        <a href="#torneos" style="color: blue;">| Próximos torneos |</a>
     </nav>
-    <article class="seccion">
-        <div class="subtitulo">
-            <h3>Nuevas camisetas del equipo</h3>
-        </div>
-        <p>Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.</p>
-        <img
-            src="images/camiseta.jpg"
-            alt="Camiseta de jugger"
-            width="350"
-            height="350"
-        >
-    </article>
-    <article class="seccion" style="position: absolute; left: 750px; top: 340px;">
-        <div class="subtitulo">
-            <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
-        </div>
-        <p>
-            Aprovechando la llegada del puente, la Asociación de Jugger Granada permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
-            <br>
-            Podéis inscribiros a través del siguiente
-            <a href="" style="color: blue;">enlace</a>
-            .
-            <br>
-            La inscripción está reservada a los primeros 20 jugadores que se inscriban. Estos serán asignados a un equipo para la participación en los entrenos.
-        </p>
-        <img src="images/combate.jpg" alt="Partido de Jugger" width="600px style text-align center">
-    </article>
-    <aside class="seccion" style="position: absolute; left:  1500px; top: 340px; width: 250;">
-        <div class="subtitulo">
-            <h3>Alineación</h3>
-        </div>
-        <p>
-            <strong>Plantilla principal del equipo</strong>
-            <br>
-            Kette: Dani
-            <br>
-            Anti principal: Marga
-            <br>
-            Anti secundario: Juan
-            <br>
-            Escolta: Lucía
-            <br>
-            Corredora: Drinna
-        </p>
-        <strong>
-            Suplentes
-            <br>
-        </strong>
-        Juego abierto: Pedro
+</div>
+<p style="text-align: center; font-size: xx-large;">Novedades</p>
+<article class="seccion">
+    <div class="subtitulo">
+        <h3>Nuevas camisetas del equipo</h3>
+    </div>
+    <p>
+        Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
+            El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.
         <br>
-        Segundo escolta: Nono
+        <a href="tienda.html" style="color: blue;">Pulsa aquí para saber más.</a>
     </p>
-    <img src="images/alineación.jpg" alt="Alineación del equipo" style="width: 220px; height: 350px;">
+    <img
+        src="images/camiseta.jpg"
+        alt="Camiseta de jugger"
+        width="350"
+        height="350"
+    >
+</article>
+<article class="seccion" style="position: absolute; left: 750px; top: 436px;">
+    <div class="subtitulo">
+        <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
+    </div>
+    <p>
+        Aprovechando la llegada del puente, la Asociación de Jugger Granada 
+            permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
+        <br>
+        Para inscribirte
+        <a href="" style="color: blue;">Pulsa aquí.</a>
+        <br>
+        La inscripción está reservada a los primeros 20 jugadores que se inscriban.
+             Estos serán asignados a un equipo para la participación en los entrenos.
+    </p>
+    <img src="images/combate.jpg" alt="Partido de Jugger" width="600px style text-align center">
+</article>
+<aside class="seccion" style="position: absolute; left:  1500px; top: 436px; width: 250;">
+    <div class="subtitulo">
+        <h3>Alineación</h3>
+    </div>
+    <p>
+        <strong>Plantilla principal del equipo</strong>
+        <br>
+        Kette: Dani
+        <br>
+        Anti principal: Marga
+        <br>
+        Anti secundario: Juan
+        <br>
+        Escolta: Lucía
+        <br>
+        Corredora: Drinna
+    </p>
+    <strong>
+        Suplentes
+        <br>
+    </strong>
+    Juego abierto: Pedro
+    <br>
+    Segundo escolta: Nono
+</p>
+<img src="images/alineación.jpg" alt="Alineación del equipo" style="width: 220px; height: 350px; ">
 </aside>
+<nav class="cuestionario" id="C1" style="position: absolute; top: 1300px;">
+    <h2 style="margin: 5px;">Formulario de contacto:</h2>
+    <p style="margin: 5px;">Si desea realizar alguna consulta, agradecemos el contacto a través del siguiente formulario.</p>
+    <article class="seccionCuest">
+        <div style="margin: 5px;">
+            <label for="nombre">
+                <h3>Nombre:</h3>
+            </label>
+            <input type="text" id="nombre">
+            <label for="correo">
+                <h3>Correo electrónico:</h3>
+            </label>
+            <input type="email" id="correo">
+            <br>
+            <h3>Indique el motivo de su consulta:</h3>
+            <input type="radio" id="compra" name="tematica">
+            <label for="compra">Problemas con la tienda</label>
+            <br>
+            <input type="radio" id="jugar" name="tematica">
+            <label for="jugar"> Participar en las actividades</label>
+            <br>
+            <input type="radio" id="información" name="tematica">
+            <label for="información"> Recibir información</label>
+            <br>
+            <input type="radio" id="otro" name="tematica">
+            <label for="otro">Otros motivos</label>
+            <br>
+            <textarea name="mensaje" rows="10" cols="50"> Explique brevemente el motivo de su consulta</textarea>
+        </div>
+    </article>
+</nav>
+
+<div style="position:absolute; top: 1900px; background-color:rgb(216, 235, 235); text-align: center;">
+    <div style="background-color: rgb(26, 23, 23); height: 1px; width: 1850;"></div> 
+
+<h4>Práctica de desarrollo de página web en HTML</h4>
+<p>IES Zaidín Vergeles <br>
+Alumno: Daniel Fontalva Ostio <br>
+Asignatura: Lenguaje de Marcas <br>
+Primer Trimestre <br>
+</p>
+
+</div>
+
 </body>
 </html>
