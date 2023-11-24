@@ -3,16 +3,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página principal</title>
     <link rel="icon" type="x-icon" href="images/nevadito.jpg">
+    <meta name="author" content="Daniel Fontalva Ostio">
+    <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
     <style>
         body {
 background-image: url(images/fondo.jpg);
             background-repeat: no-repeat;
         }
 
-        .navegador {
+        a {
             font-size: x-large;
-            border: 2px solid rgb(21, 21, 91);
-            text-align: center;
+          
+
+         text-decoration: none;
+         color: blue;
+         text-align: center;
        
         }
             .seccion {
@@ -21,6 +26,7 @@ border: 1px solid black;
                 width: 700px;
                 text-align: center;
                 margin: 5px;
+                float: left;
                 
             }
             .subtitulo {
@@ -37,6 +43,7 @@ font-size:larger;
             }
 
             .cuestionario {
+                float: left;
                 margin: 5px;
                 background-color: rgb(194, 216, 235);
                 border: 3px solid rgb(4, 4, 68);
@@ -46,6 +53,9 @@ font-size:larger;
                 margin: 5px;
                 background-color: rgb(216, 235, 235);
                 border: 1px solid black;
+            }
+           footer{
+
             }
     </style>
 </head>
@@ -59,11 +69,11 @@ font-size:larger;
         >
         <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
     </div>
-    <nav class="navegador">
-        <a href="" style="color: blue;">| Galería |</a>
-        <a href="" style="color: blue;">| Tienda |</a>
-        <a href="#C1" style="color: blue;">| Contacto |</a>
-        <a href="#torneos" style="color: blue;">| Próximos torneos |</a>
+    <nav class="navegador" style="text-align: center;">
+        <a href="">| Galería |</a>
+        <a href="">| Tienda |</a>
+        <a href="#C1">| Contacto |</a>
+        <a href="#torneos">| Próximos torneos |</a>
     </nav>
 </div>
 <p style="text-align: center; font-size: xx-large;">Novedades</p>
@@ -75,16 +85,19 @@ font-size:larger;
         Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
             El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.
         <br>
-        <a href="tienda.html" style="color: blue;">Pulsa aquí para saber más.</a>
+        Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
+        <br>
+        <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
     </p>
     <img
         src="images/camiseta.jpg"
         alt="Camiseta de jugger"
         width="350"
-        height="350"
+        height="355"
+        style="margin: 5px;"
     >
 </article>
-<article class="seccion" style="position: absolute; left: 750px; top: 436px;">
+<article class="seccion">
     <div class="subtitulo">
         <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
     </div>
@@ -93,14 +106,19 @@ font-size:larger;
             permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
         <br>
         Para inscribirte
-        <a href="#C2" style="color: blue;">Pulsa aquí.</a>
+        <a href="#C2" style="color: blue; font-size: medium;">Pulsa aquí.</a>
         <br>
         La inscripción está reservada a los primeros 20 jugadores que se inscriban.
              Estos serán asignados a un equipo para la participación en los entrenos.
     </p>
-    <img src="images/combate.jpg" alt="Partido de Jugger" width="600px style text-align center">
+    <img
+        src="images/combate.jpg"
+        style="margin: 5px;"
+        alt="Partido de Jugger"
+        width="600px style text-align center"
+    >
 </article>
-<aside class="seccion" style="position: absolute; left:  1500px; top: 436px; width: 250;">
+<aside class="seccion" style="width: 250;">
     <div class="subtitulo">
         <h3>Alineación</h3>
     </div>
@@ -125,85 +143,99 @@ font-size:larger;
     <br>
     Segundo escolta: Nono
 </p>
-<img src="images/alineación.jpg" alt="Alineación del equipo" style="width: 220px; height: 350px; ">
+<img src="images/alineación.jpg" style="margin: 5px; width: 220px; height: 350px; " alt="Alineación del equipo">
 </aside>
-<nav class="cuestionario" id="C1" style="position: absolute; top: 2000px;">
-    <h2 style="margin: 5px;">Formulario de contacto:</h2>
-    <p style="margin: 5px;">Si desea realizar alguna consulta, agradecemos el contacto a través del siguiente formulario.</p>
-    <article class="seccionCuest">
-        <div style="margin: 5px;">
-            <label for="nombre">
-                <h3>Nombre:</h3>
-            </label>
-            <input type="text" id="nombre">
-            <label for="correo">
-                <h3>Correo electrónico:</h3>
-            </label>
-            <input type="email" id="correo">
+<div style="float: left;">
+    <nav class="cuestionario" id="C1">
+        <h2 style="margin: 5px;">Formulario de contacto:</h2>
+        <p style="margin: 5px;">Si desea realizar alguna consulta, agradecemos el contacto a través del siguiente formulario.</p>
+        <article class="seccionCuest">
+            <div style="margin: 5px;">
+                <label for="nombre">
+                    <h3>Nombre:</h3>
+                </label>
+                <input type="text" id="nombre">
+                <label for="correo">
+                    <h3>Correo electrónico:</h3>
+                </label>
+                <input type="email" id="correo">
+                <br>
+                <h3>Indique el motivo de su consulta:</h3>
+                <input type="radio" id="compra" name="tematica">
+                <label for="compra">Problemas con la tienda</label>
+                <br>
+                <input type="radio" id="jugar" name="tematica">
+                <label for="jugar"> Participar en las actividades</label>
+                <br>
+                <input type="radio" id="información" name="tematica">
+                <label for="información"> Recibir información</label>
+                <br>
+                <input type="radio" id="otro" name="tematica">
+                <label for="otro">Otros motivos</label>
+                <br>
+                <textarea name="mensaje" rows="10" cols="50"> Explique brevemente el motivo de su consulta</textarea>
+                <br>
+                <input type="submit">
+            </div>
+        </article>
+    </nav>
+    <nav class="cuestionario" id="C2">
+        <h2 style="margin: 5px;">Participación en entrenos abiertos:</h2>
+        <p style="margin: 5px;">Para participar en los entrenos abiertos de diciembre, rellene el siguiente formulario:</p>
+        <article class="seccionCuest">
+            <div style="margin: 5px;">
+                <label for="nombre">
+                    <h3>Nombre:</h3>
+                </label>
+                <input type="text" id="nombre">
+                <label for="correo">
+                    <h3>Correo electrónico:</h3>
+                </label>
+                <input type="email" id="correo">
+                <h3>Horario en el que asistirá.</h3>
+                <input type="checkbox" id="horario">
+                <label for="horario">5/12 - 12:00</label>
+                <br>
+                <input type="checkbox" id="horario2">
+                <label for="horario2">12/12 - 16:00</label>
+                <br>
+                <input type="checkbox" id="horario3">
+                <label for="horario3">19/12 - 12:00</label>
+                <br>
+                <input type="checkbox" id="horario4">
+                <label for="horario4">26/12 - 16:00</label>
+                <br>
+                <br>
+                <input type="submit">
+            </div>
+        </article>
+    </nav>
+    <nav class="cuestionario">
+        <h2>Localización de los entrenamientos:</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.8716609439086!2d-3.6066509747775504!3d37.19497790144226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce3e1d0e2e5%3A0xe8c7d41fc9366582!2sPolideportivo%20San%20Francisco%20Javier!5e0!3m2!1ses!2ses!4v1700817206968!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border:0; margin: 5px;"
+            allowfullscreen="true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+    </div>
+    <footer style=" text-align: center;">
+    </nav>
+    <div>
+        <h4>Práctica de desarrollo de página web en HTML</h4>
+        <p>
+            IES Zaidín Vergeles
             <br>
-            <h3>Indique el motivo de su consulta:</h3>
-            <input type="radio" id="compra" name="tematica">
-            <label for="compra">Problemas con la tienda</label>
+            Alumno: Daniel Fontalva Ostio
             <br>
-            <input type="radio" id="jugar" name="tematica">
-            <label for="jugar"> Participar en las actividades</label>
+            Asignatura: Lenguaje de Marcas
             <br>
-            <input type="radio" id="información" name="tematica">
-            <label for="información"> Recibir información</label>
+            Primer Trimestre
             <br>
-            <input type="radio" id="otro" name="tematica">
-            <label for="otro">Otros motivos</label>
-            <br>
-            <textarea name="mensaje" rows="10" cols="50"> Explique brevemente el motivo de su consulta</textarea>
-            <br>
-            <input type="submit">
-        </div>
-    </article>
-</nav>
-<nav class="cuestionario" id="C2" style="position: absolute; top: 2000px; left: 1000px;">
-    <h2 style="margin: 5px;">Participación en entrenos abiertos</h2>
-    <p style="margin: 5px;">Para participar en los entrenos abiertos de diciembre, rellene el siguiente formulario:</p>
-    <article class="seccionCuest">
-        <div style="margin: 5px;">
-            <label for="nombre">
-                <h3>Nombre:</h3>
-            </label>
-            <input type="text" id="nombre">
-            <label for="correo">
-                <h3>Correo electrónico:</h3>
-            </label>
-            <input type="email" id="correo">
-            <h3>Horario en el que asistirá.</h3>
-            <input type="checkbox" id="horario">
-            <label for="horario">5/12 - 12:00</label>
-            <br>
-            <input type="checkbox" id="horario2">
-            <label for="horario2">12/12 - 16:00</label>
-            <br>
-            <input type="checkbox" id="horario3">
-            <label for="horario3">19/12 - 12:00</label>
-            <br>
-            <input type="checkbox" id="horario4">
-            <label for="horario4">26/12 - 16:00</label>
-            <br>
-            <br>
-            <input type="submit">
-        </div>
-    </article>
-</nav>
-<div style="position:absolute; top: 2700px; background-color:rgb(216, 235, 235); text-align: center;">
-    <div style="background-color: rgb(26, 23, 23); height: 1px; width: 1850;"></div>
-    <h4>Práctica de desarrollo de página web en HTML</h4>
-    <p>
-        IES Zaidín Vergeles
-        <br>
-        Alumno: Daniel Fontalva Ostio
-        <br>
-        Asignatura: Lenguaje de Marcas
-        <br>
-        Primer Trimestre
-        <br>
-    </p>
-</div>
+        </p>
+    </div>
 </body>
 </html>

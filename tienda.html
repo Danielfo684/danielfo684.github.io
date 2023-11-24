@@ -1,18 +1,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
+    <title>Tienda</title>
     <link rel="icon" type="x-icon" href="images/nevadito.jpg">
+    <meta name="author" content="Daniel Fontalva Ostio">
+    <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
     <style>
         body {
 background-image: url(images/fondo.jpg);
             background-repeat: no-repeat;
         }
 
-        .navegador {
+        a {
             font-size: x-large;
-            border: 2px solid rgb(21, 21, 91);
-            text-align: center;
+          
+
+         text-decoration: none;
+         color: blue;
+         text-align: center;
        
         }
             .seccion {
@@ -21,6 +26,7 @@ border: 1px solid black;
                 width: 700px;
                 text-align: center;
                 margin: 5px;
+                float: left;
                 
             }
             .subtitulo {
@@ -37,6 +43,7 @@ font-size:larger;
             }
 
             .cuestionario {
+                float: left;
                 margin: 5px;
                 background-color: rgb(194, 216, 235);
                 border: 3px solid rgb(4, 4, 68);
@@ -59,10 +66,88 @@ font-size:larger;
         >
         <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
     </div>
-    <nav class="navegador">
-        <a href="index.html#C2" style="color: blue;">| Galería |</a>
-        <a href="tienda.html" style="color: blue;">| Tienda |</a>
-        <a href="index.html#C1" style="color: blue;">| Contacto |</a>
-        <a href="index.html#torneos" style="color: blue;">| Próximos torneos |</a>
+    <nav class="navegador" style="text-align: center;">
+        <a href="">| Galería |</a>
+        <a href="">| Tienda |</a>
+        <a href="#C1">| Contacto |</a>
+        <a href="#torneos">| Próximos torneos |</a>
     </nav>
 </div>
+<p style="text-align: center; font-size: xx-large;">Novedades</p>
+<article class="seccion">
+    <div class="subtitulo">
+        <h3>Nuevas camisetas del equipo</h3>
+    </div>
+    <p>
+        Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
+            El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados. <br>
+            Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
+        <br>
+        <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
+    </p>
+    <img
+        src="images/camiseta.jpg"
+        alt="Camiseta de jugger"
+        width="350"
+        height="355"
+        style="margin: 5px;"
+    >
+</article>
+<article class="seccion">
+    <div class="subtitulo">
+        <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
+    </div>
+    <p>
+        Aprovechando la llegada del puente, la Asociación de Jugger Granada 
+            permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
+        <br>
+        Para inscribirte
+        <a href="#C2" style="color: blue; font-size: medium;">Pulsa aquí.</a>
+        <br>
+        La inscripción está reservada a los primeros 20 jugadores que se inscriban.
+             Estos serán asignados a un equipo para la participación en los entrenos.
+    </p>
+    <img
+        src="images/combate.jpg"
+        style="margin: 5px;"
+        alt="Partido de Jugger"
+        width="600px style text-align center"
+    >
+</article>
+
+<div style="float: left;">
+    <nav class="cuestionario" id="C1">
+        <h2 style="margin: 5px;">Formulario de contacto:</h2>
+        <p style="margin: 5px;">Si desea realizar alguna consulta, agradecemos el contacto a través del siguiente formulario.</p>
+        <article class="seccionCuest">
+            <div style="margin: 5px;">
+                <label for="nombre">
+                    <h3>Nombre:</h3>
+                </label>
+                <input type="text" id="nombre">
+                <label for="correo">
+                    <h3>Correo electrónico:</h3>
+                </label>
+                <input type="email" id="correo">
+                <br>
+                <h3>Indique el motivo de su consulta:</h3>
+                <input type="radio" id="compra" name="tematica">
+                <label for="compra">Problemas con la tienda</label>
+                <br>
+                <input type="radio" id="jugar" name="tematica">
+                <label for="jugar"> Participar en las actividades</label>
+                <br>
+                <input type="radio" id="información" name="tematica">
+                <label for="información"> Recibir información</label>
+                <br>
+                <input type="radio" id="otro" name="tematica">
+                <label for="otro">Otros motivos</label>
+                <br>
+                <textarea name="mensaje" rows="10" cols="50"> Explique brevemente el motivo de su consulta</textarea>
+                <br>
+                <input type="submit">
+            </div>
+        </article>
+    </nav>
+    </div>
+    </body>
