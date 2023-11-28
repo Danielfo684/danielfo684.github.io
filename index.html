@@ -1,11 +1,13 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
-    <link rel="icon" type="x-icon" href="images/nevadito.jpg">
-    <meta name="author" content="Daniel Fontalva Ostio">
-    <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
-    <style>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página principal</title>
+        <link rel="icon" type="x-icon" href="images/nevadito.jpg">
+        <meta name="author" content="Daniel Fontalva Ostio">
+        <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
+        <style>
         body {
 background-image: url(images/fondo.jpg);
             background-repeat: no-repeat;
@@ -54,140 +56,116 @@ font-size:larger;
                 background-color: rgb(216, 235, 235);
                 border: 1px solid black;
             }
-           footer{
+        </style>
+    </head>
+    <body>
+        <div class="titulo" style="text-align: center;">
 
-            }
-    </style>
-</head>
-<body>
-    <div class="titulo" style="text-align: center;">
-        <img
-            src="images/cabecera1.jpg"
-            alt="Equipo de jugger"
-            height="200px"
-            width="800px"
-        >
-        <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
+            <img
+                src="images/cabecera1.jpg"
+                alt="Equipo de jugger"
+                height="200px"
+                width="800px"
+            >
+
+            <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
+        </div>
+        <nav class="navegador" style="text-align: center;">
+            <a href="index.html">| Novedades |</a>
+            <a href="galeria.html">| Galería |</a>
+            <a href="tienda.html">| Tienda |</a>
+            <a href="contacto.html">| Contacto |</a>
+            <a href="entrenos.html">| Próximos entrenos |</a>
+        </nav>
     </div>
-    <nav class="navegador" style="text-align: center;">
-        <a href="galeria">| Galería |</a>
-        <a href="tienda.html">| Tienda |</a>
-        <a href="contacto.html">| Contacto |</a>
-        <a href="#entrenos">| Próximos entrenos |</a>
-    </nav>
-</div>
-<p style="text-align: center; font-size: xx-large;">Novedades</p>
-<article class="seccion">
-    <div class="subtitulo">
-        <h3>Nuevas camisetas del equipo</h3>
-    </div>
-    <p>
-        Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
+    <p style="text-align: center; font-size: xx-large;">Novedades</p>
+    <article class="seccion">
+        <div class="subtitulo">
+            <h3>Nuevas camisetas del equipo</h3>
+        </div>
+        <p>
+            Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
             El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.
+            <br>
+            Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
+            <br>
+            <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
+        </p>
+        <img
+            src="images/camiseta.jpg"
+            alt="Camiseta de jugger"
+            width="350"
+            height="355"
+            style="margin: 5px;"
+        >
+    </article>
+    <article class="seccion">
+        <div class="subtitulo">
+            <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
+        </div>
+        <p>
+            Aprovechando la llegada del puente, la Asociación de Jugger Granada 
+            permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
+            <br>
+            <a href="#Centrenos" style="color: blue; font-size: medium;"> Para inscribirte pulsa aquí.</a>
+            <br>
+            La inscripción está reservada a los primeros 20 jugadores que se inscriban.
+             Estos serán asignados a un equipo para la participación en los entrenos.
+        </p>
+        <img
+            src="images/combate.jpg"
+            style="margin: 5px;"
+            alt="Partido de Jugger"
+            width="600px style text-align center"
+        >
+    </article>
+    <aside class="seccion" style="width: 250;">
+        <div class="subtitulo">
+            <h3>Alineación de la Autumn Cup</h3>
+        </div>
+        <div style="float: left; margin: 50px;">
+        <p>
+            <strong>Plantilla principal del equipo</strong>
+            <br>
+            Kette: Dani
+            <br>
+            Anti principal: Marga
+            <br>
+            Anti secundario: Juan
+            <br>
+            Escolta: Lucía
+            <br>
+            Corredora: Drinna
+        </p>
+
+        <strong>
+            Suplentes
+            <br>
+        </strong>
+        Juego abierto: Pedro
         <br>
-        Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
-        <br>
-        <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
+        Segundo escolta: Nono
     </p>
-    <img
-        src="images/camiseta.jpg"
-        alt="Camiseta de jugger"
-        width="350"
-        height="355"
-        style="margin: 5px;"
-    >
-</article>
+</div>
+    <img src="images/alineación.jpg" style="margin: 5px; width: 220px; height: 350px; " alt="Alineación del equipo">
+</aside>
 <article class="seccion">
     <div class="subtitulo">
-        <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
+        <h3>Un nuevo equipo irrumpe en la escena granadina</h3>
     </div>
     <p>
-        Aprovechando la llegada del puente, la Asociación de Jugger Granada 
-            permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
+        Con la llegada del equipo Perros de Tíndalos, la Asociación de Jugger Granada se expande y opta por declarse como club deportivo. 
         <br>
-        <a href="#Centrenos" style="color: blue; font-size: medium;"> Para inscribirte pulsa aquí.</a>
+        La aparición de la Federación Andaluza de Jugger se presenta como una oportunidad única para dar vida a nuestro deporte y a las asociaciones en crecimiento como la granadina.
         <br>
-        La inscripción está reservada a los primeros 20 jugadores que se inscriban.
-             Estos serán asignados a un equipo para la participación en los entrenos.
     </p>
     <img
-        src="images/combate.jpg"
+        src="images/perros.jpg"
+        alt="Logo de Perros de Tíndalos"
+        width="250"
+        height="250"
         style="margin: 5px;"
-        alt="Partido de Jugger"
-        width="600px style text-align center"
     >
 </article>
-<aside class="seccion" style="width: 250;">
-    <div class="subtitulo">
-        <h3>Alineación</h3>
-    </div>
-    <p>
-        <strong>Plantilla principal del equipo</strong>
-        <br>
-        Kette: Dani
-        <br>
-        Anti principal: Marga
-        <br>
-        Anti secundario: Juan
-        <br>
-        Escolta: Lucía
-        <br>
-        Corredora: Drinna
-    </p>
-    <strong>
-        Suplentes
-        <br>
-    </strong>
-    Juego abierto: Pedro
-    <br>
-    Segundo escolta: Nono
-</p>
-<img src="images/alineación.jpg" style="margin: 5px; width: 220px; height: 350px; " alt="Alineación del equipo">
-</aside>
-
-    <nav class="cuestionario" id="entrenos">
-        <h2 style="margin: 5px;">Participación en entrenos abiertos:</h2>
-        <p style="margin: 5px;">Para participar en los entrenos abiertos de diciembre, rellene el siguiente formulario:</p>
-        <article class="seccionCuest">
-            <div style="margin: 5px;">
-                <label for="nombre">
-                    <h3>Nombre:</h3>
-                </label>
-                <input type="text" id="nombre">
-                <label for="correo">
-                    <h3>Correo electrónico:</h3>
-                </label>
-                <input type="email" id="correo">
-                <h3>Horario en el que asistirá.</h3>
-                <input type="checkbox" id="horario">
-                <label for="horario">5/12 - 12:00</label>
-                <br>
-                <input type="checkbox" id="horario2">
-                <label for="horario2">12/12 - 16:00</label>
-                <br>
-                <input type="checkbox" id="horario3">
-                <label for="horario3">19/12 - 12:00</label>
-                <br>
-                <input type="checkbox" id="horario4">
-                <label for="horario4">26/12 - 16:00</label>
-                <br>
-                <br>
-                <input type="submit">
-            </div>
-        </article>
-    </nav>
-    <nav class="cuestionario">
-        <h2>Localización de los entrenamientos:</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.8716609439086!2d-3.6066509747775504!3d37.19497790144226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce3e1d0e2e5%3A0xe8c7d41fc9366582!2sPolideportivo%20San%20Francisco%20Javier!5e0!3m2!1ses!2ses!4v1700817206968!5m2!1ses!2ses"
-            width="600"
-            height="450"
-            style="border:0; margin: 5px;"
-            allowfullscreen="true"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-    </div>
-    </nav>
 </body>
 </html>

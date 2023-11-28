@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página principal</title>
+        <link rel="icon" type="x-icon" href="images/nevadito.jpg">
+        <meta name="author" content="Daniel Fontalva Ostio">
+        <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
+        <style>
+        body {
+background-image: url(images/fondo.jpg);
+            background-repeat: no-repeat;
+        }
+
+        a {
+            font-size: x-large;
+          
+
+         text-decoration: none;
+         color: blue;
+         text-align: center;
+       
+        }
+            .seccion {
+border: 1px solid black;
+                background-color: rgb(227, 232, 236);
+                width: 700px;
+                text-align: center;
+                margin: 5px;
+                float: left;
+                
+            }
+            .subtitulo {
+                margin: 5px;
+                  border: 1px solid black;
+                background-color: rgb(183, 207, 199);
+                text-align: center;
+font-size:larger;
+    
+            }
+            .titulo {
+                text-align: center;
+                font-size: xx-large;
+            }
+
+            .cuestionario {
+                float: left;
+                margin: 5px;
+                background-color: rgb(194, 216, 235);
+                border: 3px solid rgb(4, 4, 68);
+
+            }
+            .seccionCuest {
+                margin: 5px;
+                background-color: rgb(216, 235, 235);
+                border: 1px solid black;
+            }
+           footer{
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titulo" style="text-align: center;">
+            <img
+                src="images/cabecera1.jpg"
+                alt="Equipo de jugger"
+                height="200px"
+                width="800px"
+            >
+            <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
+        </div>
+        <nav class="navegador" style="text-align: center;">
+            <a href="index.html">| Novedades |</a>
+            <a href="galeria.html">| Galería |</a>
+            <a href="tienda.html">| Tienda |</a>
+            <a href="contacto.html">| Contacto |</a>
+            <a href="entrenos.html">| Próximos entrenos |</a>
+        </nav>
+    </div>
+    <div>
+        <nav class="cuestionario" id="entrenos">
+            <h2 style="margin: 5px;">Participación en entrenos abiertos:</h2>
+            <p style="margin: 5px;">Para participar en los entrenos abiertos de diciembre, rellene el siguiente formulario:</p>
+            <article class="seccionCuest">
+                <div style="margin: 5px;">
+                    <div>
+                        <label for="nombre">
+                            <h3>Nombre:</h3>
+                        </label>
+                        <input type="text" id="nombre">
+                        <label for="correo">
+                            <h3>Correo electrónico:</h3>
+                        </label>
+                        <input type="email" id="correo">
+                        <h3>Horario en el que asistirá.</h3>
+                        <input type="checkbox" id="horario">
+                        <label for="horario">5/12 - 12:00</label>
+                        <br>
+                        <input type="checkbox" id="horario2">
+                        <label for="horario2">12/12 - 16:00</label>
+                        <br>
+                        <input type="checkbox" id="horario3">
+                        <label for="horario3">19/12 - 12:00</label>
+                        <br>
+                        <input type="checkbox" id="horario4">
+                        <label for="horario4">26/12 - 16:00</label>
+                        <br>
+                        <br>
+                        
+                    </div>
+                    <div style="text-align: center;">
+                        
+<h3>Elige el equipo con el que quieres participar:</h3>
+<label for="nevaditos">
+<img src="images/nevaditos.jpg" alt="Logo de nevaditos" style="height: 200px; width: 250px;"></label>
+<label for="perros">
+<img src="images/perros.jpg" alt="Logo de perros de tindalos" style="width: 200px; height: 200px"></label>
+<br>
+<input type="radio" id="nevaditos" name="equipo"> Nevaditos
+<input type="radio" id="perros" name="equipo"> Perros de Tíndalos
+<input type="submit">
+                    </div>
+                </article>
+            </nav>
+        </div>
+        <nav class="cuestionario">
+            <h2>Localización de los entrenamientos:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.8716609439086!2d-3.6066509747775504!3d37.19497790144226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce3e1d0e2e5%3A0xe8c7d41fc9366582!2sPolideportivo%20San%20Francisco%20Javier!5e0!3m2!1ses!2ses!4v1700817206968!5m2!1ses!2ses"
+                width="600"
+                height="450"
+                style="border:0; margin: 5px;"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </nav>
+</body>
+</html>
