@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
+    <title>Página principal</title>
     <link rel="icon" type="x-icon" href="images/nevadito.jpg">
     <meta name="author" content="Daniel Fontalva Ostio">
     <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
@@ -54,6 +54,9 @@ font-size:larger;
                 background-color: rgb(216, 235, 235);
                 border: 1px solid black;
             }
+           footer{
+
+            }
     </style>
 </head>
 <body>
@@ -68,51 +71,43 @@ font-size:larger;
     </div>
     <nav class="navegador" style="text-align: center;">
         <a href="galeria">| Galería |</a>
-        <a href="tienda">| Tienda |</a>
-        <a href="contacto">| Contacto |</a>
-        <a href="entrenos">| Próximos entrenos |</a>
+        <a href="tienda.html">| Tienda |</a>
+        <a href="contacto.html">| Contacto |</a>
+        <a href="#entrenos">| Próximos entrenos |</a>
     </nav>
 </div>
-<p style="text-align: center; font-size: xx-large;">Novedades</p>
-<article class="seccion">
-    <div class="subtitulo">
-        <h3>Nuevas camisetas del equipo</h3>
-    </div>
-    <p>
-        Tras una larga espera, el equipo ya tiene preparado el nuevo diseño listo para su venta. 
-            El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.
-        <br>
-        Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
-        <br>
-        <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
-    </p>
-    <img
-        src="images/camiseta.jpg"
-        alt="Camiseta de jugger"
-        width="350"
-        height="355"
-        style="margin: 5px;"
-    >
-</article>
-<article class="seccion">
-    <div class="subtitulo">
-        <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
-    </div>
-    <p>
-        Aprovechando la llegada del puente, la Asociación de Jugger Granada 
-            permitirá el acceso gratuito a todos aquellos jugadores que quieran probar el deporte.
-        <br>
-        Para inscribirte
-        <a href="#C2" style="color: blue; font-size: medium;">Pulsa aquí.</a>
-        <br>
-        La inscripción está reservada a los primeros 20 jugadores que se inscriban.
-             Estos serán asignados a un equipo para la participación en los entrenos.
-    </p>
-    <img
-        src="images/combate.jpg"
-        style="margin: 5px;"
-        alt="Partido de Jugger"
-        width="600px style text-align center"
-    >
-</article>
+<div style="float: left;">
+    <nav class="cuestionario">
+        <h2 style="margin: 5px;">Formulario de contacto:</h2>
+        <p style="margin: 5px;">Si desea realizar alguna consulta, agradecemos el contacto a través del siguiente formulario.</p>
+        <article class="seccionCuest">
+            <div style="margin: 5px;">
+                <label for="nombre">
+                    <h3>Nombre:</h3>
+                </label>
+                <input type="text" id="nombre">
+                <label for="correo">
+                    <h3>Correo electrónico:</h3>
+                </label>
+                <input type="email" id="correo">
+                <br>
+                <h3>Indique el motivo de su consulta:</h3>
+                <input type="radio" id="compra" name="tematica">
+                <label for="compra">Problemas con la tienda</label>
+                <br>
+                <input type="radio" id="jugar" name="tematica">
+                <label for="jugar"> Participar en las actividades</label>
+                <br>
+                <input type="radio" id="información" name="tematica">
+                <label for="información"> Recibir información</label>
+                <br>
+                <input type="radio" id="otro" name="tematica">
+                <label for="otro">Otros motivos</label>
+                <br>
+                <textarea name="mensaje" rows="10" cols="50"> Explique brevemente el motivo de su consulta</textarea>
+                <br>
+                <input type="submit">
+            </div>
+        </article>
+    </nav>
 </body>
