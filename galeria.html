@@ -9,10 +9,23 @@
         <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
         <style>
         body {
-background-image: url(images/fondo.jpg);
-            background-repeat: no-repeat;
+            background-color: rgb(158, 207, 226);
+           
         }
+        footer {
+                height: 50px;
+              text-align: center;
+                display: table;
+                bottom: 0px;
+                left: 0;
+                width: 100%;
+                background-color: rgb(83, 117, 117);
 
+            }
+            iframe{
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
         a {
             font-size: x-large;
           
@@ -70,18 +83,96 @@ font-size:larger;
                 height="200px"
                 width="800px"
             >
-            <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
+            <div style="background-color: rgb(104, 166, 177); text-align: center; padding-top: 0.1cm;">
+                <p style="font-size: xx-large; background-color: rgb(104, 166, 177)">Página oficial de Nevaditos Jugger Club</p>
+            
+            <nav class="navegador" style="text-align: center;  padding-top: 15px ; padding-bottom: 15px;">
+                <a href="index.html">| Novedades |</a>
+                <a href="galeria.html">| Galería |</a>
+                <a href="tienda.html">| Tienda |</a>
+                <a href="contacto.html">| Contacto |</a>
+                <a href="entrenos.html">| Próximos entrenos |</a>
+            </nav>
         </div>
-        <nav class="navegador" style="text-align: center;">
-            <a href="index.html">| Novedades |</a>
-            <a href="galeria.html">| Galería |</a>
-            <a href="tienda.html">| Tienda |</a>
-            <a href="contacto.html">| Contacto |</a>
-            <a href="entrenos.html">| Próximos entrenos |</a>
         </nav>
     </div>
-
-
-
-    </body>
+    <div style=" padding: 20px; margin: 20px;">
+        <p style="text-align: center; font-size: xx-large; ;">Últimos vídeos</p>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RjA_pABa7F4?si=AX5L_ckT2IAncPY7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/-RkqbdtCJGs?si=w1zSSQQrIgNQ0A6F"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GdtM41CgSg0?si=qqoehCvjQ5JlvxJh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+    </div>
+    <div style=" padding: 20px; float: left;">
+        <p style="text-align: center; font-size: xx-large; ;"> Últimas fotografías</p>
+        <div class="seccion">
+            <div class="subtitulo">
+                Combate de Jugger
+            </div>
+            <img
+                src="images/combate.jpg"
+                alt="Combate de jugger"
+                width="500px"
+                height="300px"
+            >
+        </div>
+        <div class="seccion">
+            <div class="subtitulo">
+                Nuevo logo de la asociación
+            </div>
+            <img
+                src="images/asociacion.jpg"
+                alt="Logo de la nueva asociación de Granada"
+                width="400px"
+                height="300px"
+            >
+        </div>
+        <div class="seccion">
+            <div class="subtitulo">
+                Logo de Nevaditos
+            </div>
+            <img src="images/nevaditos.jpg" alt="Logo de nevaditos"
+            height="300">
+        </div>
+        <div class="seccion">
+            <div class="subtitulo">
+                Logo de Perros de Tíndalos
+            </div>
+            <img src="images/perros.jpg" alt="Logo de Perros de Tíndalos"
+            height="300">
+        </div>
+    </div>
+    <footer>
+        <h4>
+            Práctica de HTML
+            <br>
+            Alumno: Daniel Fontalva Ostio
+            <br>
+            Ciclo Formativo DAW, primer módulo
+        </h4>
+    </footer>
+</body>
 </html>
