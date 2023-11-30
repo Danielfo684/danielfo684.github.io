@@ -9,8 +9,10 @@
         <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
         <style>
         body {
-background-image: url(images/fondo.jpg);
+/*background-image: url(images/fondo.jpg);
             background-repeat: no-repeat;
+            */
+            background-color: rgb(158, 207, 226);
         }
 
         a {
@@ -27,8 +29,9 @@ border: 1px solid black;
                 background-color: rgb(227, 232, 236);
                 width: 700px;
                 text-align: center;
-                margin: 5px;
-                float: left;
+              margin-bottom: 50px;
+              margin-left: 50px;
+                float:left;
                 
             }
             .subtitulo {
@@ -56,6 +59,16 @@ font-size:larger;
                 background-color: rgb(216, 235, 235);
                 border: 1px solid black;
             }
+            footer {
+                height: 50px;
+                line-height: 50px;
+              text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgb(83, 117, 117);
+            }
         </style>
     </head>
     <body>
@@ -67,10 +80,11 @@ font-size:larger;
                 height="200px"
                 width="800px"
             >
-
-            <p style="font-size: xx-large;">Página oficial de Nevaditos Jugger Club</p>
         </div>
-        <nav class="navegador" style="text-align: center;">
+        <div style="background-color: rgb(104, 166, 177); text-align: center; padding-top: 0.1cm;">
+            <p style="font-size: xx-large; background-color: rgb(104, 166, 177)">Página oficial de Nevaditos Jugger Club</p>
+        
+        <nav class="navegador" style="text-align: center;  padding-top: 15px ; padding-bottom: 15px;">
             <a href="index.html">| Novedades |</a>
             <a href="galeria.html">| Galería |</a>
             <a href="tienda.html">| Tienda |</a>
@@ -78,8 +92,10 @@ font-size:larger;
             <a href="entrenos.html">| Próximos entrenos |</a>
         </nav>
     </div>
-    <p style="text-align: center; font-size: xx-large;">Novedades</p>
+    <p style="text-align: center; font-size: xx-large; ;">Novedades</p>
+    
     <article class="seccion">
+        
         <div class="subtitulo">
             <h3>Nuevas camisetas del equipo</h3>
         </div>
@@ -167,5 +183,10 @@ font-size:larger;
         style="margin: 5px;"
     >
 </article>
+<footer>
+    Práctica de HTML
+    Alumno: Daniel Fontalva Ostio
+</footer>
+
 </body>
 </html>
