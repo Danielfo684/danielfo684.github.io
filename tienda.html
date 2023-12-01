@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title>
-    <link rel="icon" type="x-icon" href="images/nevadito.jpg">
-    <meta name="author" content="Daniel Fontalva Ostio">
-    <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda</title>
+        <link rel="icon" type="x-icon" href="images/nevadito.jpg">
+        <meta name="author" content="Daniel Fontalva Ostio">
+        <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
+        <style>
         body {
             background-color: rgb(158, 207, 226);
         }
@@ -66,33 +66,52 @@ font-size:larger;
                 background-color: rgb(216, 235, 235);
                 border: 1px solid black;
             }
-    </style>
-</head>
-<body>
-    <div class="titulo" style="text-align: center;">
-        <img
-            src="images/cabecera1.jpg"
-            alt="Equipo de jugger"
-            height="200px"
-            width="800px"
-        >
-        <div style="background-color: rgb(104, 166, 177); text-align: center; padding-top: 0.1cm;">
-            <p style="font-size: xx-large; background-color: rgb(104, 166, 177)">Página oficial de Nevaditos Jugger Club</p>
-        
-        <nav class="navegador" style="text-align: center;  padding-top: 15px ; padding-bottom: 15px;">
-            <a href="index.html">| Novedades |</a>
-            <a href="galeria.html">| Galería |</a>
-            <a href="tienda.html">| Tienda |</a>
-            <a href="contacto.html">| Contacto |</a>
-            <a href="entrenos.html">| Próximos entrenos |</a>
-        </nav>
-    </div>
-</div>
-<footer>
-    <h4>Práctica de HTML <br>
-    Alumno: Daniel Fontalva Ostio 
-   <br> Ciclo Formativo DAW, primer módulo 
-    </h4>
-</footer>
-</body>
+            .articulo {
+float: left;
+margin: 15px;
+background-color: rgb(255, 255, 255);
+border: 1px solid black;
+width: 300px;
+height: 400px;
+padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="titulo" style="text-align: center;">
+            <img
+                src="images/cabecera1.jpg"
+                alt="Equipo de jugger"
+                height="200px"
+                width="800px"
+            >
+            <div style="background-color: rgb(104, 166, 177); text-align: center; padding-top: 0.1cm;">
+                <p style="font-size: xx-large; background-color: rgb(104, 166, 177)">Página oficial de Nevaditos Jugger Club</p>
+                <nav class="navegador" style="text-align: center;  padding-top: 15px ; padding-bottom: 15px;">
+                    <a href="index.html">| Inicio |</a>
+                    <a href="galeria.html">| Galería |</a>
+                    <a href="tienda.html">| Tienda |</a>
+                    <a href="contacto.html">| Contacto |</a>
+                    <a href="entrenos.html">| Próximos entrenos |</a>
+                </nav>
+            </div>
+        </div>
+        <div class="articulo">
+            <img src="images/camiseta.jpg" alt="camiseta básica" width="300" height="300">
+            <p style="font-size: large; color: rgb(97, 68, 45);">Camiseta Jugger Negra</p>
+            <p style="font-size: medium;"> Tallas: L-M-L-XL.
+                <br>
+                Precio: 15€
+            </p>
+        </div>
+        <footer>
+            <h4>
+                Práctica de HTML
+                <br>
+                Alumno: Daniel Fontalva Ostio
+                <br>
+                Ciclo Formativo DAW, primer módulo
+            </h4>
+        </footer>
+    </body>
 </html>
