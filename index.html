@@ -3,192 +3,65 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página principal</title>
-        <link rel="icon"  href="images/nevadito.jpg">
-        <meta name="author" content="Daniel Fontalva Ostio">
-        <meta name="ciclo" content="1ºDAW IES Zaidín Vergeles">
-        <meta name="description" content="Página de Inicio de Nevaditos Jugger Club y Asociación Granadina de Jugger">
+        <title>Document</title>
+        <link rel="icon" href="images/asociacion.jpg">
+        <link rel="stylesheet" href="stylesheet.css">
         <style>
-        body {
-
-            background-color: rgb(158, 207, 226);
+        .flex-container{
+            display: flex;
+            flex-direction: row;
         }
-
-        a {
+        header{
+         position: sticky;
+         justify-content: space-between;
+         margin: 40px;
+        }
+        a.button {
             font-size: x-large;
-          
-
-         text-decoration: none;
-         color: blue;
-         text-align: center;
-       
+            margin: 10px;
+            padding: 10px;
+            border: 0.1px solid black;
+            background-color: rgb(139, 163, 243);
+            text-align: center;
+            cursor: pointer;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
         }
-            .seccion {
-border: 1px solid black;
-                background-color: rgb(227, 232, 236);
-                width: 700px;
-                text-align: center;
-              margin-bottom: 50px;
-              margin-left: 50px;
-                float:left;
-                
-            }
-            .subtitulo {
-                margin: 5px;
-                  border: 1px solid black;
-                background-color: rgb(183, 207, 199);
-                text-align: center;
-font-size:larger;
-    
-            }
-            .titulo {
-                text-align: center;
-                font-size: xx-large;
-            }
+        a.button:hover {
+            background-color: aquamarine;
+        }
+        a.i {
+            text-align: center;
+            font-size: 36px;
+      margin-right: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
 
-            .cuestionario {
-                float: left;
-                margin: 5px;
-                background-color: rgb(194, 216, 235);
-                border: 3px solid rgb(4, 4, 68);
-
-            }
-            .seccionCuest {
-                margin: 5px;
-                background-color: rgb(216, 235, 235);
-                border: 1px solid black;
-            }
-            footer {
-                height: 50px;
-               
-              text-align: center;
-                display: table;
-                bottom: 0px;
-                left: 0;
-                width: 100%;
-                background-color: rgb(83, 117, 117);
-
-            }
         </style>
+        <script src="https://kit.fontawesome.com/a1edf0eaf7.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="titulo" style="text-align: center;">
-
-            <img
-                src="images/cabecera1.jpg"
-                alt="Equipo de jugger"
-                height="200"
-                width="800"
-            >
+        <header class="flex-container" >
+            <div>
+            <a href="" class="button">Inicio</a>
+            <a href="" class="button">Galería</a>
+            <a href="" class="button">Tienda</a>
+            <a href="" class="button">Contacto</a>
         </div>
-        <div style="background-color: rgb(104, 166, 177); text-align: center; padding-top: 0.1cm;">
-            <p style="font-size: xx-large; background-color: rgb(104, 166, 177)">Página oficial de Nevaditos Jugger Club</p>
-        
-        <nav class="navegador" style="text-align: center;  padding-top: 15px ; padding-bottom: 15px;">
-            <a href="index.html">| Inicio |</a>
-            <a href="galeria.html">| Galería |</a>
-            <a href="tienda.html">| Tienda |</a>
-            <a href="contacto.html">| Contacto |</a>
-            <a href="entrenos.html">| Próximos entrenos |</a>
-        </nav>
-    </div>
-    <p style="text-align: center; font-size: xx-large; ;">Novedades</p>
-    
-    <article class="seccion">
-        
-        <div class="subtitulo">
-            <h3>Nuevas camisetas del equipo</h3>
-        </div>
-        <p>
-            Tras una larga espera, el equipo ya tiene preparado el <b> nuevo diseño </b> listo para su venta. 
-            El precio para socios es de 10€, manteniendo el coste inicial de 15€ para los recién llegados.
-            <br>
-            Las camisetas utilizan un tejido deportivo con alta transpirabilidad que se adapta a tus prácticas deportivas.
-            <br>
-            <a href="tienda.html" style="color: blue; font-size: medium;">Pulsa aquí para saber más.</a>
-        </p>
-        <img
-            src="images/camiseta.jpg"
-            alt="Camiseta de jugger"
-            width="350"
-            height="355"
-            style="margin: 5px;"
-        >
-    </article>
-    <article class="seccion">
-        <div class="subtitulo">
-            <h3>Entrenamientos abiertos durante el mes de diciembre</h3>
-        </div>
-        <p>
-            Aprovechando la llegada del puente, la Asociación de Jugger Granada 
-            permitirá el <b> acceso gratuito </b> a todos aquellos jugadores que quieran probar el deporte.
-            <br>
-            <a href="entrenos.html" style="color: blue; font-size: medium;"> Para inscribirte pulsa aquí.</a>
-            <br>
-            La inscripción está reservada a los <b> primeros 20 jugadores </b> que se inscriban.
-             Estos serán asignados a un equipo para la participación en los entrenos.
-        </p>
-        <img
-            src="images/combate.jpg"
-            style="margin: 5px;"
-            alt="Partido de Jugger"
-            width="600"
-        >
-    </article>
-    <aside class="seccion" style="width: 250;">
-        <div class="subtitulo">
-            <h3>Alineación de la Autumn Cup</h3>
-        </div>
-        <div style="float: left; margin: 50px;">
-            <strong>Plantilla principal del equipo</strong>
-            <ul>
-          
-            <li>Kette: Dani</li>
-           
-           <li> Anti principal: Marga</li>
-           
-          <li> Anti secundario: Juan</li>
-           
-           <li>Escolta: Lucía</li>
-          
-           <li> Corredora: Drinna</li>
-       
-    </ul>
-        <strong>
-            Suplentes
-        </strong>
-       
-       <ul> <li>Juego abierto: Pedro</li>
-     <li>  Segundo escolta: Nono </li>
-    </ul>
-</div>
-    <img src="images/alineación.jpg" style="margin: 5px; width: 220px; height: 350px; " alt="Alineación del equipo">
-</aside>
-<article class="seccion">
-    <div class="subtitulo">
-        <h3>Un nuevo equipo irrumpe en la escena granadina</h3>
-    </div>
-    <p>
-        Con la llegada del equipo Perros de Tíndalos, la Asociación de Jugger Granada se expande y opta por declarse como club deportivo. 
-        <br>
-        La aparición de la <b>Federación Andaluza de Jugger </b> se presenta como una oportunidad única para dar vida a nuestro deporte y a las asociaciones en crecimiento como la granadina.
-        <br>
-        Podrás comprar las camisetas del nuevo equipo en <a href="tienda.html" style="font-size: medium;">el siguiente enlace.</a>
-    </p>
-    <img
-        src="images/perros.jpg"
-        alt="Logo de Perros de Tíndalos"
-        width="250"
-        height="250"
-        style="margin: 5px;"
-    >
-</article>
-<footer>
-    <h4>Práctica de HTML <br>
-    Alumno: Daniel Fontalva Ostio 
-   <br> Ciclo Formativo DAW, primer módulo 
-    </h4>
-</footer>
-
-</body>
+            <div>
+                <a href="" class="i">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="" class="i">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="" class="i">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </header>
+    </body>
 </html>
