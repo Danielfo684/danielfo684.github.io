@@ -10,6 +10,7 @@
         .flex-container{
             display: flex;
             flex-direction: row;
+        justify-content: space-between;
         }
         header{
          justify-content: space-between;
@@ -17,6 +18,7 @@
          position: -webkit-sticky;
          position: sticky;
          top: 30px;
+         background-color: rgb(75, 139, 118);
         }
         a.button {
             font-size: x-large;
@@ -41,6 +43,7 @@
             cursor: pointer;
             text-decoration: none;
             color: black;
+            margin-top: 10px;
         }
 
 #logo{
@@ -59,7 +62,6 @@
 }
 h1{
     font-size: xx-large;
-    font-style: ;
 }
         </style>
         <!--
@@ -83,7 +85,8 @@ Para que funcione, se incluye en el <head> la etiqueta <script> junto con el enl
 En estas líneas utilizo la librería de iconos. Se trata de una etiqueta 
 <i> en la que asignamos la class del icono en cuestión. Desde la página web obtenemos la class="" que necesitamos para cada icono-->
                 <a href="" class="i">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram" style="margin: 20px;"></i>  <!--
+                        IMPORTANTE AQUI -->
                 </a>
                 <a href="" class="i">
                     <i class="fa-brands fa-tiktok"></i>
