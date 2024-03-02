@@ -1,7 +1,8 @@
-body{
+body {
     margin: 0;
     font-family: "Oswald";
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -9,18 +10,21 @@ header {
     margin-bottom: 35;
     position: sticky;
     top: 0px;
-    background-color:#8cabf0;
+    background-color: #8cabf0;
 }
 
 header ul {
-    list-style-type: none; /*quito el estilo de la lista para que no me salgan los puntos por defecto*/
+    list-style-type: none;
+    /*quito el estilo de la lista para que no me salgan los puntos por defecto*/
     margin: 0;
-    padding: 0; /*Margin y padding a 0 para que se rellene por completo el botón del menú*/
+    padding: 0;
+    /*Margin y padding a 0 para que se rellene por completo el botón del menú*/
 }
 
 header ul li {
     float: left;
 }
+
 
 header ul li a {
     display: block;
@@ -51,6 +55,42 @@ a.i {
     text-align: center;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /*Para que el flex se pliegue con la página*/
+}
+
+#articulo {
+    background-color: #8cabf0;
+    text-align: justify;
+    border-radius: 25px;
+    padding: 15px;
+    margin: auto;
+    width: 40%;
+}
+
+.cabecera {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#articulo img {
+    max-width: 60%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.cuerpo {
+ padding-left: 15PX;
+ padding-right: 15px;
+    font-size: 1.3em;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -62,38 +102,59 @@ a.i {
     margin: auto;
     margin-bottom: 20px;
 }
+
 .grid-titulos {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    font-size: 1.4em;
+    padding-top: 0px;
 }
-h1 {
-    font-size: xx-large;
-}
-iframe{
+
+iframe {
     width: 560px;
     height: 315px;
 }
 
 /* Pruebas de media query para abrirlo en movil */
 @media only screen and (max-width: 600px) {
+    body{
+        font-size: 0.7em;
+}
     header {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4em;
     }
 
     header ul li {
-        float: left; 
+        float: left;
     }
 
     .grid-container {
-        grid-template-columns: auto; 
+        grid-template-columns: auto;
     }
 
     .grid-galeriaVideos {
 
-justify-content: space-around;
+        justify-content: space-around;
     }
-    iframe{width: 100%; height: 100%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
     }
+.flex-container{
+    flex-direction: column;
+    justify-content: center;
+   margin: 0px;
+}
+#articulo{
+width: 80%;
+margin-bottom: 20px;
+}
+
+#articulo img{
+padding: 5px;
+}
 
 }
