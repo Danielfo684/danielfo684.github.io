@@ -84,6 +84,8 @@ a.i {
     display: block;
     margin: auto;
     border-radius: 25px;
+    padding: 10px;
+
 }
 
 .cuerpo {
@@ -151,11 +153,17 @@ iframe {
 }
 #articulo{
 width: 80%;
+
+flex: none;
+max-width: 80%;
+margin: auto;
 margin-bottom: 20px;
 }
 
 #articulo img{
 padding: 5px;
+
+
 }
 
 }
