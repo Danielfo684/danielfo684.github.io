@@ -68,8 +68,9 @@ a.i {
     text-align: justify;
     border-radius: 25px;
     padding: 15px;
-    margin: auto;
-    width: 40%;
+
+    max-width: 40%;
+    flex: 1; /* con esto conseguimos que los elementos del flex se mantengan del mismo tamaño*/
 }
 
 .cabecera {
@@ -78,7 +79,7 @@ a.i {
 }
 
 #articulo img {
-    max-width: 60%;
+    max-width: 90%;
     max-height: 90%;
     display: block;
     margin: auto;
@@ -88,7 +89,7 @@ a.i {
 .cuerpo {
  padding-left: 15PX;
  padding-right: 15px;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .grid-container {
