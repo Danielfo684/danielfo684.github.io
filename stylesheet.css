@@ -68,9 +68,10 @@ a.i {
     text-align: justify;
     border-radius: 25px;
     padding: 15px;
-margin-bottom: 20px;
+    margin-bottom: 20px;
     max-width: 40%;
-    flex: 1; /* con esto conseguimos que los elementos del flex se mantengan del mismo tamaño*/
+    flex: 1;
+    /* con esto conseguimos que los elementos del flex se mantengan del mismo tamaño*/
 }
 
 .cabecera {
@@ -87,21 +88,22 @@ margin-bottom: 20px;
     padding: 10px;
 
 }
+
 #articulo iframe {
 
-        max-width: 90%;
-        max-height: 90%;
-        display: block;
-        margin: auto;
-        border-radius: 25px;
-        padding: 10px;
-    
-    
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    padding: 10px;
+
+
 }
 
 .cuerpo {
- padding-left: 15PX;
- padding-right: 15px;
+    padding-left: 15PX;
+    padding-right: 15px;
     font-size: 1.2em;
 }
 
@@ -115,7 +117,6 @@ margin-bottom: 20px;
 .grid-galeriaVideos {
     margin: auto;
     margin-bottom: 20px;
-    margin: 20px;
 }
 
 .grid-titulos {
@@ -129,7 +130,7 @@ iframe {
     width: 560px;
     height: 315px;
 }
- 
+
 footer {
     background-color: #8cabf0;
     padding: 20px;
@@ -139,20 +140,98 @@ footer {
     width: auto;
     font-size: 1.3em;
 }
-footer a{
- 
+
+footer a {
+
     color: white;
 }
-footer a:hover{
- 
+
+footer a:hover {
+
     color: #f3d68e;
 }
 
+.horario {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.casilla-dia {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #bfcff1;
+}
+
+.casilla-hora {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #bfcff1;
+}
+
+#hora1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#hora2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#hora3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#hora4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.casilla-marcada {
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #f3d68e;
+}
+
+#marca1 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+#marca2 {
+    grid-column: 3;
+    grid-row: 4 / 6;
+    background-color: rgb(230, 75, 75);
+}
+
+#marca3 {
+    grid-column: 4;
+    grid-row: 2 / 3;
+}
+
+#marca4 {
+    grid-column: 5;
+    grid-row: 2 / 4;
+}
+
+#marca5 {
+    grid-column: 6;
+    grid-row: 4 / 6;
+}
 
 @media only screen and (max-width: 600px) {
-    body{
+    body {
         font-size: 0.7em;
-}
+    }
+
     header {
         flex-direction: column;
         align-items: center;
@@ -176,28 +255,60 @@ footer a:hover{
         width: 100%;
         height: 100%;
     }
-.flex-container{
-    flex-direction: column;
-    justify-content: center;
-   margin: 0px;
-}
-#articulo{
-width: 80%;
 
-flex: none;
-max-width: 80%;
-margin: auto;
-margin-bottom: 20px;
-}
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
 
-#articulo img{
-padding: 5px;
+    #articulo {
+        width: 80%;
+
+        flex: none;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #articulo img {
+        padding: 5px;
 
 
-}
-footer{
-  width: auto;
-    
-}
-}
+    }
 
+    footer {
+        width: auto;
+
+    }
+
+    .horario {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-rows: auto;
+        gap: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .casilla-dia {
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #bfcff1;
+    }
+
+    .casilla-hora {
+        padding: 1px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #bfcff1;
+    }
+
+    .casilla-marcada {
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        background-color: #f3d68e;
+    }
+}
