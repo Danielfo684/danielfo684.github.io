@@ -11,6 +11,7 @@ header {
     position: sticky;
     top: 0px;
     background-color: #8cabf0;
+    width: 100%;
 }
 
 header ul {
@@ -86,7 +87,6 @@ a.i {
     margin: auto;
     border-radius: 25px;
     padding: 10px;
-
 }
 
 #articulo iframe {
@@ -283,32 +283,54 @@ footer a:hover {
     }
 
     .horario {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        grid-template-rows: auto;
-        gap: 5px;
         padding: 5px;
-        text-align: center;
     }
 
     .casilla-dia {
         padding: 5px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        background-color: #bfcff1;
     }
 
     .casilla-hora {
         padding: 1px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        background-color: #bfcff1;
     }
 
     .casilla-marcada {
         padding: 5px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        background-color: #f3d68e;
+    }
+}
+
+
+@media only screen and (min-width: 1151px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media only screen and (min-width: 1700px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 1151px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+    .flex-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    #articulo {
+        width: 80%;
+
+        flex: none;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
