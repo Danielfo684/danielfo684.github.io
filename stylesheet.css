@@ -226,6 +226,23 @@ footer a:hover {
     grid-column: 6;
     grid-row: 4 / 6;
 }
+#formulario{
+    margin-top: 30px;
+     background-color: #bfc0bf;
+     border-radius: 25px;
+     padding: 15px;
+     margin-bottom: 20px;
+     max-width: 80%;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     width: 40%;
+ }
+ #formulario  div {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+ }
 
 @media only screen and (max-width: 600px) {
     body {
@@ -259,9 +276,13 @@ footer a:hover {
     .flex-container {
         flex-direction: column;
         justify-content: center;
-        margin: 0px;
-    }
 
+    }
+#formulario{
+    margin: auto;
+    width: 80%;
+
+}
     #articulo {
         width: 80%;
 
@@ -297,6 +318,7 @@ footer a:hover {
     .casilla-marcada {
         padding: 5px;
     }
+
 }
 
 
@@ -311,11 +333,12 @@ footer a:hover {
     .grid-container {
         grid-template-columns: auto auto auto;
     }
+
 }
 
 
 
-@media only screen and (max-width: 1151px) {
+@media only screen and (max-width: 1150px) {
     .grid-container {
         grid-template-columns: auto;
     }
@@ -323,6 +346,11 @@ footer a:hover {
         flex-direction: column;
         justify-content: center;
         margin: 0px;
+    }
+    #formulario{
+        margin: auto;
+        width: 80%;
+    
     }
 
     #articulo {
