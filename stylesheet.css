@@ -68,7 +68,7 @@ a.i {
     text-align: justify;
     border-radius: 25px;
     padding: 15px;
-
+margin-bottom: 20px;
     max-width: 40%;
     flex: 1; /* con esto conseguimos que los elementos del flex se mantengan del mismo tamaño*/
 }
@@ -87,6 +87,17 @@ a.i {
     padding: 10px;
 
 }
+#articulo iframe {
+
+        max-width: 90%;
+        max-height: 90%;
+        display: block;
+        margin: auto;
+        border-radius: 25px;
+        padding: 10px;
+    
+    
+}
 
 .cuerpo {
  padding-left: 15PX;
@@ -104,6 +115,7 @@ a.i {
 .grid-galeriaVideos {
     margin: auto;
     margin-bottom: 20px;
+    margin: 20px;
 }
 
 .grid-titulos {
@@ -117,8 +129,26 @@ iframe {
     width: 560px;
     height: 315px;
 }
+ 
+footer {
+    background-color: #8cabf0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    width: auto;
+    font-size: 1.3em;
+}
+footer a{
+ 
+    color: white;
+}
+footer a:hover{
+ 
+    color: #f3d68e;
+}
 
-/* Pruebas de media query para abrirlo en movil */
+
 @media only screen and (max-width: 600px) {
     body{
         font-size: 0.7em;
@@ -165,5 +195,9 @@ padding: 5px;
 
 
 }
-
+footer{
+  width: auto;
+    
 }
+}
+

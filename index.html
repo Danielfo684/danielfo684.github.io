@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Asociación Granadina de Jugger</title>
         <link rel="icon" href="images/asociacion.jpg">
         <link rel="stylesheet" href="stylesheet.css">
 
@@ -25,8 +25,8 @@ Para que funcione, se incluye en el <head> la etiqueta <script> junto con el enl
         <header>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
+                <li><a href="#Nuestros partidos">Nuestros partidos</a></li>
+                <li><a href="#entrenamientos">Entrenamientos</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
             <div>
@@ -74,14 +74,14 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                         Las reglas del juego restringen los golpes fuertes y el
                         contacto físico entre los participantes en todo momento.
                         <br>
-                    
-                      
+
                     </p>
                 </div>
-                <p style="text-align: center; font-size: 1.3em;">  En Granada tenemos dos equipos activos a nivel competitivo:</p>
+                <p style="text-align: center; font-size: 1.3em;"> En Granada
+                    tenemos dos equipos activos a nivel competitivo:</p>
                 <div class="flex-container">
-                    <img src="images/perros.jpg" alt="">
-                    <img src="images/nevaditos.jpg" alt="">
+                    <img src="images/perros.jpg" alt>
+                    <img src="images/nevaditos.jpg" alt>
                 </div>
 
             </div>
@@ -98,7 +98,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     <p>Haz clic en la imagen para saber más.</p></div>
             </div>
         </div>
-        <div class="grid-titulos">
+        <div class="grid-titulos" id="Nuestros partidos">
             <h1>Nuestros partidos</h1>
         </div>
         <galeria class="grid-container">
@@ -152,5 +152,54 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     allowfullscreen></iframe>
             </div>
         </galeria>
+        <div id="entrenamientos">
+            <div class="grid-titulos">
+                <h1>Entrena con nosotr@s</h1>
+            </div>
+            <div class="flex-container">
+
+                <div id="articulo" style="background-color: #f3d68e;">
+                    <div class="cabecera">
+                        <h1>Ubicación de los entrenamientos</h1>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d794.5665123592923!2d-3.606690889486922!3d37.193909777432786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce6a4f476bf%3A0x4ab551acf41c2624!2sParque%20Deportivo!5e0!3m2!1ses!2ses!4v1709424783035!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div id="articulo">
+                    <div class="cabecera">
+                        <h1>Calendario de entrenamientos</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Asociación granadina de Jugger
+                <br> <a
+                    href="https://www.google.es/maps/place/Parque+Deportivo/@37.1939098,-3.6066909,19z/data=!4m6!3m5!1s0xd71fce6a4f476bf:0x4ab551acf41c2624!8m2!3d37.193452!4d-3.6060912!16s%2Fg%2F11hcfr8rwf?entry=ttu">
+                    Entrenamientos en Parque
+                    Deportivo, Calle San Fernando, Beiro, 18013</a>
+                <br> 123 56 42 39
+            </p>
+            <a href="https://www.instagram.com/juggergranada/?hl=es"
+                class="i">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@abenarabi_juggerclub"
+                class="i">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://twitter.com/FicZone/status/1759929188675440715"
+                class="i">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </footer>
     </body>
 </html>
