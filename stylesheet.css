@@ -237,6 +237,7 @@ footer a:hover {
      flex-direction: column;
      text-align: center;
      width: 40%;
+
  }
  #formulario  div {
     padding: 5px;
@@ -281,6 +282,7 @@ footer a:hover {
 #formulario{
     margin: auto;
     width: 80%;
+    margin-bottom: 20px;
 
 }
     #articulo {
@@ -350,7 +352,7 @@ footer a:hover {
     #formulario{
         margin: auto;
         width: 80%;
-    
+        margin-bottom: 20px;
     }
 
     #articulo {
