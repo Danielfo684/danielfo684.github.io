@@ -56,8 +56,15 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
         </div>
 
         <div class="flex-container">
-
-            <div class="articulo">
+   <!--
+Hay varios div con id= articulo, lo cual es un error ya que debería ser una class y no un id. 
+Sin embargo, tras subir el código a github con el error solucionado aparecen una serie de nuevos errores de maquetación y 
+formato que en los documentos de mi ordenador no suceden, pese a que el código es, aparentemente, el mismo. 
+Por ello, he dejado en todos los divs el id articulo pese a que sea un error pero con la intención de que se mantenga el formato.
+Puede comprobarse el estado de la página con lo anteriormente descrito en el commit ç
+"Archivos ya pasados por los validators y mejora del readme" realizado el 10/03 a las 16:50.
+-->
+            <div id="articulo">
                 <div class="cabecera">
                     <h1>Origen</h1>
                 </div>
@@ -88,7 +95,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
 
             </div>
 
-            <div class="articulo" style="background-color: #f3d68e;">
+            <div id="articulo" style="background-color: #f3d68e;">
                 <div class="cabecera">
                     <h1>Reglas básicas</h1>
                 </div>
@@ -156,7 +163,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
             </div>
             <div class="flex-container">
 
-                <div class="articulo" style="background-color: #f3d68e;">
+                <div id="articulo" style="background-color: #f3d68e;">
                     <div class="cabecera">
                         <h1>Ubicación de los entrenamientos</h1>
                     </div>
@@ -170,7 +177,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     </div>
                 </div>
 
-                <div class="articulo">
+                <div id="articulo">
                     <div class="cabecera">
                         <h1>Calendario de entrenamientos</h1>
                     </div>

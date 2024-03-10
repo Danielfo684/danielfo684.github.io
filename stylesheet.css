@@ -66,7 +66,7 @@ a.i {
     /*Para que el flex se pliegue con la página*/
 }
 
-.articulo{
+#articulo{
     background-color: #8cabf0;
     text-align: justify;
     border-radius: 25px;
@@ -82,7 +82,7 @@ a.i {
     font-size: 1.2em;
 }
 
-.articulo img {
+#articulo img {
     max-width: 90%;
     max-height: 90%;
     display: block;
@@ -91,7 +91,7 @@ a.i {
     padding: 10px;
 }
 
-.articulo iframe {
+#articulo iframe {
 
     max-width: 90%;
     max-height: 90%;
@@ -287,7 +287,7 @@ footer a:hover {
     margin-bottom: 20px;
 
 }
-    .articulo {
+    #articulo {
         width: 80%;
 
         flex: none;
@@ -296,7 +296,7 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
-    .articulo img {
+    #articulo img {
         padding: 5px;
 
 
@@ -357,7 +357,7 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
-    .articulo {
+    #articulo {
         width: 80%;
 
         flex: none;
