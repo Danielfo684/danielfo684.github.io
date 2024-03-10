@@ -25,7 +25,7 @@ Para que funcione, se incluye en el <head> la etiqueta <script> junto con el enl
         <header>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#Nuestros partidos">Partidos</a></li>
+                <li><a href="#Nuestrospartidos">Partidos</a></li>
                 <li><a href="#entrenamientos">Entrenamientos</a></li>
                 <li><a href="#formulario">Contacto</a></li>
             </ul>
@@ -57,7 +57,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
 
         <div class="flex-container">
 
-            <div id="articulo">
+            <div class="articulo">
                 <div class="cabecera">
                     <h1>Origen</h1>
                 </div>
@@ -81,34 +81,33 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     tenemos dos equipos activos a nivel competitivo:</p>
                 <div class="flex-container">
                     <img src="images/perros.jpg" alt="imagen equipo"
-                        style="width: 100; max-width: 50%;">
+                        style=" max-width: 50%;">
                     <img src="images/nevaditos.jpg" alt="imagen equipo"
-                        style="width: 100; max-width: 50%;">
+                        style=" max-width: 50%;">
                 </div>
 
             </div>
 
-            <div id="articulo" style="background-color: #f3d68e;">
+            <div class="articulo" style="background-color: #f3d68e;">
                 <div class="cabecera">
                     <h1>Reglas básicas</h1>
                 </div>
 
-                <a href="Cartel Resumen Jugger - VERSION IMPRESION.pdf">
+                <a href="Cartel.pdf">
                     <img src="images/reglas.png" alt="reglas">
                 </a>
                 <div class="cuerpo" style="text-align: center;">
                     <p>Haz clic en la imagen para saber más.</p></div>
             </div>
         </div>
-        <div class="grid-titulos" id="Nuestros partidos">
+        <div class="grid-titulos" id="Nuestrospartidos">
             <h1>Nuestros partidos</h1>
         </div>
-        <galeria class="grid-container">
+        <div class="grid-container">
             <div class="grid-galeriaVideos">
                 <iframe
                     src="https://www.youtube.com/embed/RjA_pABa7F4?si=AX5L_ckT2IAncPY7"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -116,7 +115,6 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                 <iframe
                     src="https://www.youtube.com/embed/-RkqbdtCJGs?si=w1zSSQQrIgNQ0A6F"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -124,7 +122,6 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                 <iframe
                     src="https://www.youtube.com/embed/GdtM41CgSg0?si=qqoehCvjQ5JlvxJh"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -132,7 +129,6 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                 <iframe
                     src="https://www.youtube.com/embed/3GYUyPMWVug?si=GroeqtyuUONWNANp"
                     title="YouTube video player"
-                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
@@ -141,7 +137,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
             <div class="grid-galeriaVideos">
                 <iframe
                     src="https://www.youtube.com/embed/AnkRvKnc36Q?si=w2E-7mRE1JjvMRw4"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
@@ -153,14 +149,14 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
             </div>
-        </galeria>
+        </div>
         <div id="entrenamientos">
             <div class="grid-titulos">
                 <h1>Entrena con nosotr@s</h1>
             </div>
             <div class="flex-container">
 
-                <div id="articulo" style="background-color: #f3d68e;">
+                <div class="articulo" style="background-color: #f3d68e;">
                     <div class="cabecera">
                         <h1>Ubicación de los entrenamientos</h1>
                     </div>
@@ -174,7 +170,7 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                     </div>
                 </div>
 
-                <div id="articulo">
+                <div class="articulo">
                     <div class="cabecera">
                         <h1>Calendario de entrenamientos</h1>
                     </div>
@@ -243,7 +239,6 @@ En estas líneas utilizo la librería de iconos. Se trata de una etiqueta
                       <textarea id="comentarios" name="comentarios"></textarea>
                     </div>
                     <button type="submit">Inscribirse</button>
-                  </form>
                
             </div>
         </div>
