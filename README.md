@@ -1,7 +1,7 @@
 
 # Repositorio directo a web de Daniel Fontalva Ostio 1ºDAW.
 
-La web es la página de una asociación deportiva que a su vez los contactos y entrenamientos de los equipos. 
+La web es la página de una asociación deportiva que a su vez los contactos y entrenamientos de los equipos. El objetivo final de la página es poder utilizarla en el futuro por la propia Asociación que se representa en la página, de ahí la elección de la temática.
 
 [Enlace en línea a la página del proyecto.](https://danielfo684.github.io/index.html)
 
